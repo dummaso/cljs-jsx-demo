@@ -11,4 +11,10 @@ module.exports = {
     path: path.resolve(__dirname, 'public', 'js'),
   },
   target: 'web',
+  resolve: {
+    alias: {
+      js: path.resolve(__dirname, 'src/gen'),
+    },
+    extensions: ['.js', '.jsx'],
+  },
 }

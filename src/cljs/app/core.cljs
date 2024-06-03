@@ -2,8 +2,8 @@
   (:require
    ["@tanstack/react-query" :refer  [useQuery useQueryClient
                                      QueryClient QueryClientProvider]]
-   #_["/components/jsx-demo" :refer [JsxDemo]]
-   #_["/components/tsx-demo" :refer [TsxDemo]]
+   ["js/components/jsx-demo" :refer [JsxDemo]]
+   ["js/components/tsx-demo" :refer [TsxDemo]]
    [cljs.spec.alpha :as s]
    [clojure.edn :as edn]
    [uix.core :as uix :refer [defui $]]
@@ -127,8 +127,8 @@
                          :key created-at
                          :on-update-todos set-todos!)))
              ($ footer))
-          #_($ JsxDemo)
-          #_($ TsxDemo)
+          ($ JsxDemo)
+          ($ TsxDemo)
           ($ posts)))))
 
 (defonce root

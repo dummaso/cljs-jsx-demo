@@ -1,8 +1,8 @@
 {
   "name": "uix-jsx-playground",
   "scripts": {
-    "dev": "shadow-cljs -A:dev watch app & yarn styles-dev & yarn components-dev & yarn provide-js-dev",
-    "release": "yarn provide-js && yarn components && shadow-cljs -A:dev release app && yarn styles-release",
+    "dev": "yarn components-dev & shadow-cljs -A:dev watch app & yarn styles-dev & yarn provide-js-dev",
+    "release": "yarn components && shadow-cljs -A:dev release app && yarn provide-js && yarn styles-release",
     "styles-dev": "onchange -o '> public/main.css && lightningcss --bundle public/main.css -o public/main.css' -i src/**/*.css -- cat src/**/*.css",
     "styles-release": "cat src/**/*.css > public/main.css && lightningcss --minify --bundle public/main.css -o public/main.css",
     "components": "./node_modules/.bin/babel src/js --out-dir src/gen --extensions '.js,.ts,.jsx,.tsx'",
