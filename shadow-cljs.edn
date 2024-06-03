@@ -1,0 +1,9 @@
+{:deps true
+ :dev-http {8080 "public"}
+ :builds {:app
+          {:target :browser
+           :js-options {:js-provider :external
+                        :external-index "target/external.js"}
+           :modules {:main {:entries [app.core]
+                            :init-fn app.core/init}}
+           :devtools {:preloads [preload devtools.preload]}}}}
