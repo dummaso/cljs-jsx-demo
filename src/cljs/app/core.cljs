@@ -2,8 +2,8 @@
   (:require
    ["@tanstack/react-query" :refer  [useQuery useQueryClient
                                      QueryClient QueryClientProvider]]
-   ["js/components/jsx-demo" :refer [JsxDemo]]
-   ["js/components/tsx-demo" :refer [TsxDemo]]
+   ["@/components/jsx-demo" :refer [JsxDemo]]
+   ["@/components/tsx-demo" :refer [TsxDemo]]
    [cljs.spec.alpha :as s]
    [clojure.edn :as edn]
    [uix.core :as uix :refer [defui $]]

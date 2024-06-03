@@ -13,7 +13,7 @@ module.exports = {
   target: 'web',
   resolve: {
     alias: {
-      js: path.resolve(__dirname, 'src/gen'),
+      '@': path.resolve(__dirname, 'src/gen'),
     },
     extensions: ['.js', '.jsx'],
   },
